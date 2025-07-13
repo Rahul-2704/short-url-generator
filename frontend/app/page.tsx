@@ -36,8 +36,9 @@ export default function Home() {
       const response=await fetch(`http://localhost:3000/get-og-url/${shortUrl}`);
       const data=await response.json();
       if(response.ok&&data.data){
-        // setRetrievedLongUrl(data.data);
-        window.location.href=data.data
+        setRetrievedLongUrl(data.data);
+        // for redirection to original long url
+        // window.location.href=data.data
       }
       else{
         setError('Long url not retrieved.')
