@@ -97,7 +97,7 @@ export default function Home() {
 
         {retrievedLongUrl && (
           <p className="mt-4 text-green-400 max-w-full">
-            Long Url: <a href={`/${retrievedLongUrl}`} target="_blank">{retrievedLongUrl}</a>
+            Long Url: <a href={`${retrievedLongUrl}`} target="_blank">{retrievedLongUrl}</a>
           </p>
         )}
       </div>
